@@ -29,7 +29,7 @@ function loadFromStorage() {
     const entries = JSON.parse(saved);
     entries.forEach(entry => {
         if (entry.table === "pending") {
-            addRowPending(entry.name, entry.link, entry.deadline);
+            addToPending(entry.name, entry.link, entry.deadline);
         }
         else {
             addToPassed(entry.name, entry.link, entry.deadline, entry.status, entry.note);
@@ -222,6 +222,16 @@ function addToPassed(name, link, deadline, status, note) {
     countpas++;
 }
 
+function clearAll()
+{
+    localStorage.clear();
+    document.querySelector("#pending-body").innerHTML="";
+    document.querySelector("passed-body").innerHTML="";
+    countrem=1;
+    countpas=1;
+    timers.forEach(id=>clearInterval(id));
+    timers.clear();
+}
 loadFromStorage();
 /*
 IMPORTANT: JavaScript variables DO NOT store objects; they store REFERENCES
