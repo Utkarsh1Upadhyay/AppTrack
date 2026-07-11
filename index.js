@@ -70,7 +70,7 @@ function timer(event) {
 var countrem = 1;
 var countpas = 1;
 
-document.querySelector("button").addEventListener("click", add);
+document.querySelector("tfoot button").addEventListener("click", add);
 
 function add() {
     addToPending("", "", "");
@@ -226,7 +226,7 @@ function clearAll()
 {
     localStorage.clear();
     document.querySelector("#pending-body").innerHTML="";
-    document.querySelector("passed-body").innerHTML="";
+    document.querySelector("#passed-body").innerHTML="";
     countrem=1;
     countpas=1;
     timers.forEach(id=>clearInterval(id));
