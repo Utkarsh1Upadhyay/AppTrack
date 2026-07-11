@@ -76,6 +76,9 @@ td input[type="datetime-local"] {
 
 td input[type="text"]:focus,
 td input[type="datetime-local"]:focus { border-color: #6366f1; }
+td input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
 
 td input[type="checkbox"] { width: 16px; height: 16px; accent-color: #6366f1; cursor: pointer; }
 
