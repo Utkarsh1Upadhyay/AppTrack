@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightblue;
+}
+
+.container {
+    background: pink;
+    min-width: 840px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    height: 30vh;
+}
+
+.cell {
+    text-align: center;
+    border-radius: 5rem;
+    height: 80px;
+}
+
+.header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 2rem;
+    width: 2rem;
+}
+
+.title {
+    padding: 13px;
+}
+
+#top {
+    border-top: 3px double black;
+}
+
+.link input {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    border-radius: 5rem;
+    height: 80px;
+}

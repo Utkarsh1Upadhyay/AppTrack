@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Application Tracker</h1>
+        </div>
+        <div class="table1">
+            <table>
+                <caption>
+                    <div class="title" id="top">
+                        <h3>Pending Applications</h3>
+                    </div>
+                </caption>
+                <thead>
+                    <!-- <tr scope="column"><input type="text" maxlength="20"/></tr> -->
+                    <tr>
+                        <th scope="column">S.No</th>
+                        <th scope="column">Name</th>
+                        <th scope="column">Link</th>
+                        <th scope="column">Deadline</th>
+                        <th scope="column">Remaining Time</th>
+                        <th scope="column">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="pending-body">
+                </tbody>
+                <!-- <tbody>
+                    <tr class="row">
+                        <th scope="row">
+                            <div class="cell">1</div>
+                        </th>
+                        <td>
+                            <div class="cell "><input type="text" maxlength="20" /></div>
+                        </td>
+                        <td>
+                            <div class="cell link"><input type="text" maxlength="20" /></div>
+                        </td>
+                        <td>
+                            <div class="cell deadline"><input type="datetime-local" /></div>
+                        </td>
+                        <td>
+                            <div class="cell"></div>
+                        </td>
+                        <td>
+                            <div class="cell"><input type="checkbox"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="cell">2</div>
+                        </th>
+                        <td>
+                            <div class="cell "><input type="text" maxlength="20" /></div>
+                        </td>
+                        <td>
+                            <div class="cell link"><input type="text" maxlength="20" /></div>
+                        </td>
+                        <td>
+                            <div class="cell deadline"><input type="datetime-local" /></div>
+                        </td>
+                        <td>
+                            <div class="cell"><input type="text" maxlength="20" /></div>
+                        </td>
+                        <td>
+                            <div class="cell"><input type="checkbox"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="cell">3</div>
+                        </th>
+                        <td>
+                            <div class="cell "><input type="text" maxlength="20" /></div>
+                        </td>
+                        <td>
+                            <div class="cell link"><input type="text" maxlength="20" /></div>
+                        </td>
+                        <td>
+                            <div class="cell deadline"><input type="datetime-local" /></div>
+                        </td>
+                        <td>
+                            <div class="cell"><input type="text" maxlength="20" /></div>
+                        </td>
+                        <td>
+                            <div class="cell"><input type="checkbox"></div>
+                        </td>
+                    </tr>
+                </tbody> -->
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="5"><button>+</button></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+
+        <div class="table2">
+            <table>
+                <caption>
+                    <div class="title">
+                        <h3>Passed Applications</h3>
+                    </div>
+                </caption>
+                <hr />
+                <thead>
+                    <!-- <tr scope="column"><input type="text" maxlength="20"/></tr> -->
+                    <tr>
+                        <th scope="colomn">S.No</th>
+                        <th scope="column">Name</th>
+                        <th scope="column">Link</th>
+                        <th scope="column">Deadline</th>
+                        <th scope="column">Status</th>
+                        <th scope="column">Note</th>
+                    </tr>
+                </thead>
+                <tbody id="passed-body">
+                </tbody>
+            </table>
+        </div>
+
+        <footer class=" footer gradient-background">
+            <p>© Utkarsh Upadhyay</p>
+        </footer>
+        <script src="./index.js"></script>
+    </div>
+</body>
+
+</html>
